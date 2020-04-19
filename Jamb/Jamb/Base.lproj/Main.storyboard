@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16086"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Jamb View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="JambViewController" customModule="Jamb" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" spacing="49" translatesAutoresizingMaskIntoConstraints="NO" id="QoJ-hI-twN">
+                                <rect key="frame" x="63" y="237" width="289" height="460"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="esf-57-ntA">
+                                        <rect key="frame" x="0.0" y="0.0" width="120" height="460"/>
+                                        <subviews>
+                                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fqH-XT-IZf">
+                                                <rect key="frame" x="0.0" y="0.0" width="120" height="120"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="120" id="LdR-WT-ZnQ"/>
+                                                    <constraint firstAttribute="height" constant="120" id="RpG-5T-PHT"/>
+                                                </constraints>
+                                                <state key="normal" title="Button" image="one"/>
+                                                <connections>
+                                                    <action selector="diceButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="iVk-Y3-iJg"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="q3V-Ch-WBK">
+                                                <rect key="frame" x="0.0" y="170" width="120" height="120"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="120" id="7UZ-45-3tk"/>
+                                                    <constraint firstAttribute="width" constant="120" id="MYR-Ix-iAy"/>
+                                                </constraints>
+                                                <state key="normal" title="Button" image="three"/>
+                                                <connections>
+                                                    <action selector="diceButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Apc-lS-Fho"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fCz-PY-b4Y">
+                                                <rect key="frame" x="0.0" y="340" width="120" height="120"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="120" id="Mfw-pX-4zH"/>
+                                                    <constraint firstAttribute="width" constant="120" id="tAk-tB-iTz"/>
+                                                </constraints>
+                                                <state key="normal" title="Button" image="five"/>
+                                                <connections>
+                                                    <action selector="diceButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="aSU-Ek-KoL"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="aPe-mB-8DN">
+                                        <rect key="frame" x="169" y="0.0" width="120" height="460"/>
+                                        <subviews>
+                                            <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BeO-iH-qQU">
+                                                <rect key="frame" x="0.0" y="0.0" width="120" height="120"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="120" id="Sx3-Lq-DHn"/>
+                                                    <constraint firstAttribute="width" constant="120" id="lMP-s0-aSZ"/>
+                                                </constraints>
+                                                <state key="normal" title="Button" image="two"/>
+                                                <connections>
+                                                    <action selector="diceButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="gVj-KU-7jh"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0qP-Xm-uRB">
+                                                <rect key="frame" x="0.0" y="170" width="120" height="120"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="120" id="8fx-mX-VXN"/>
+                                                    <constraint firstAttribute="width" constant="120" id="Fsc-Ci-Ugq"/>
+                                                </constraints>
+                                                <state key="normal" title="Button" image="four"/>
+                                                <connections>
+                                                    <action selector="diceButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="8jt-YC-HKX"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="6" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="q2e-Z4-xn7">
+                                                <rect key="frame" x="0.0" y="340" width="120" height="120"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="120" id="Kum-pb-JzO"/>
+                                                    <constraint firstAttribute="width" constant="120" id="oq3-cX-6xf"/>
+                                                </constraints>
+                                                <state key="normal" title="Button" image="six"/>
+                                                <connections>
+                                                    <action selector="diceButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="o23-dY-v4i"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZQN-kk-q8z">
+                                <rect key="frame" x="157" y="802" width="100" height="40"/>
+                                <color key="backgroundColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="me3-S4-vf3"/>
+                                    <constraint firstAttribute="height" constant="40" id="nyi-3v-tE9"/>
+                                </constraints>
+                                <state key="normal" title="Roll">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="roll:" destination="BYZ-38-t0r" eventType="touchUpInside" id="1S9-wt-COZ"/>
+                                </connections>
+                            </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8Di-Lh-261">
+                                <rect key="frame" x="62.5" y="64" width="25" height="25"/>
+                                <color key="backgroundColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="25" id="9Gl-eT-R0S"/>
+                                    <constraint firstAttribute="height" constant="25" id="ZKC-Nb-dD0"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zN5-QK-i1C">
+                                <rect key="frame" x="62.5" y="99" width="25" height="25"/>
+                                <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="25" id="X6F-Pd-zax"/>
+                                    <constraint firstAttribute="height" constant="25" id="bWM-Pf-s27"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Locked, can not be rolled" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AQE-AM-0M4">
+                                <rect key="frame" x="107.5" y="66.5" width="192.5" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Unlocked, can be rolled" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Acf-ea-z76">
+                                <rect key="frame" x="107.5" y="101.5" width="180" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yj0-Ft-Tbd">
+                                <rect key="frame" x="201.5" y="134" width="11.5" height="20.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="20.5" id="AGI-aC-5zc"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <color key="textColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="Acf-ea-z76" firstAttribute="leading" secondItem="zN5-QK-i1C" secondAttribute="trailing" constant="20" id="006-PT-hMn"/>
+                            <constraint firstItem="Acf-ea-z76" firstAttribute="centerY" secondItem="zN5-QK-i1C" secondAttribute="centerY" id="5aj-De-c1m"/>
+                            <constraint firstItem="ZQN-kk-q8z" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="Htr-cn-8ii"/>
+                            <constraint firstItem="yj0-Ft-Tbd" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="JRg-ad-ip0"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="ZQN-kk-q8z" secondAttribute="bottom" constant="20" id="MO2-qe-GYC"/>
+                            <constraint firstItem="zN5-QK-i1C" firstAttribute="top" secondItem="8Di-Lh-261" secondAttribute="bottom" constant="10" id="P0L-4W-Wcv"/>
+                            <constraint firstItem="QoJ-hI-twN" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="Pxa-3S-8l7"/>
+                            <constraint firstItem="AQE-AM-0M4" firstAttribute="centerY" secondItem="8Di-Lh-261" secondAttribute="centerY" id="Z0e-AS-jiJ"/>
+                            <constraint firstItem="QoJ-hI-twN" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="lOx-AQ-M3h"/>
+                            <constraint firstItem="8Di-Lh-261" firstAttribute="leading" secondItem="zN5-QK-i1C" secondAttribute="leading" id="mpM-tf-HLL"/>
+                            <constraint firstItem="zN5-QK-i1C" firstAttribute="leading" secondItem="QoJ-hI-twN" secondAttribute="leading" id="stV-wQ-nWz"/>
+                            <constraint firstItem="AQE-AM-0M4" firstAttribute="leading" secondItem="8Di-Lh-261" secondAttribute="trailing" constant="20" id="uek-en-dUA"/>
+                            <constraint firstItem="yj0-Ft-Tbd" firstAttribute="top" secondItem="zN5-QK-i1C" secondAttribute="bottom" constant="10" id="vdA-ju-oeW"/>
+                            <constraint firstItem="8Di-Lh-261" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="w0N-uS-nEs"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="gameCounterLabel" destination="yj0-Ft-Tbd" id="wyh-Ah-NZ1"/>
+                        <outlet property="rollButton" destination="ZQN-kk-q8z" id="lPx-4j-t0x"/>
+                        <outletCollection property="diceButtons" destination="fqH-XT-IZf" collectionClass="NSMutableArray" id="Cnb-8b-PnN"/>
+                        <outletCollection property="diceButtons" destination="BeO-iH-qQU" collectionClass="NSMutableArray" id="dOs-Qw-amY"/>
+                        <outletCollection property="diceButtons" destination="q3V-Ch-WBK" collectionClass="NSMutableArray" id="exY-vD-123"/>
+                        <outletCollection property="diceButtons" destination="0qP-Xm-uRB" collectionClass="NSMutableArray" id="WKs-hI-2LB"/>
+                        <outletCollection property="diceButtons" destination="fCz-PY-b4Y" collectionClass="NSMutableArray" id="Wfm-ps-Hcr"/>
+                        <outletCollection property="diceButtons" destination="q2e-Z4-xn7" collectionClass="NSMutableArray" id="DeN-fb-Suv"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="138.61607142857142"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="five" width="256" height="256"/>
+        <image name="four" width="256" height="256"/>
+        <image name="one" width="256" height="256"/>
+        <image name="six" width="256" height="256"/>
+        <image name="three" width="256" height="256"/>
+        <image name="two" width="256" height="256"/>
+    </resources>
+</document>
