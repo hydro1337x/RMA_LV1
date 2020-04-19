@@ -18,9 +18,9 @@ class BlackjackViewController: UIViewController {
     @IBOutlet private weak var holdButton: UIButton!
     @IBOutlet private weak var changeButton: UIButton!
     @IBOutlet private weak var aceValueLabel: UILabel!
-    @IBOutlet weak var playerStackViewBg: UIView!
-    @IBOutlet weak var dealerStackViewBg: UIView!
-    @IBOutlet weak var aceValueBackgroundView: UIView!
+    @IBOutlet private weak var playerStackViewBg: UIView!
+    @IBOutlet private weak var dealerStackViewBg: UIView!
+    @IBOutlet private weak var aceValueBackgroundView: UIView!
     
     // MARK: - Properties
     private var viewModel: BlackjackViewModel!

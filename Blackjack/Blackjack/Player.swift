@@ -15,9 +15,9 @@ protocol PlayerDelegate: class {
 
 class Player: BlackjackParticipant {
     
-    internal var hand: [Card]
-    internal var aceValue: AceValue = .one
-    weak var delegate: PlayerDelegate?
+    var hand: [Card]
+    var aceValue: AceValue = .one
+    private weak var delegate: PlayerDelegate?
     
     init(delegate: PlayerDelegate?) {
         self.hand = []

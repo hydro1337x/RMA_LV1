@@ -27,7 +27,6 @@ protocol BlackjackParticipant {
 }
 
 extension BlackjackParticipant {
-    
     func draw(type: DrawType = .single) {
         return draw(type: type)
     }

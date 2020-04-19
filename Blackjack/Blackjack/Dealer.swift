@@ -15,9 +15,9 @@ protocol DealerDelegate: class {
 
 class Dealer: BlackjackParticipant {
     
-    internal var hand: [Card]
-    internal var aceValue: AceValue = .eleven
-    weak var delegate: DealerDelegate?
+    var hand: [Card]
+    var aceValue: AceValue = .eleven
+    private weak var delegate: DealerDelegate?
     private var result = 0 {
         didSet {
             if result <= 16 {
@@ -32,7 +32,7 @@ class Dealer: BlackjackParticipant {
         self.delegate = delegate
     }
     
-    internal func draw(type: DrawType = .single) {
+    func draw(type: DrawType = .single) {
         switch type {
         case .initial:
             let cards = Deck.shared.getCardsFromTop(2)
