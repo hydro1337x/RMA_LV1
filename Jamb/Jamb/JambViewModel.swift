@@ -95,13 +95,16 @@ class JambViewModel {
         let mappedDiceResults = diceResults.map { ($0, 1) }
         let resultFrequencies = Dictionary(mappedDiceResults, uniquingKeysWith: +)
         for key in resultFrequencies.keys {
-            if resultFrequencies[key] == 5 {
-                delegate?.showAlert(for: "jamb")
-                return true
-            } else if resultFrequencies[key] == 4 {
-                delegate?.showAlert(for: "poker")
-                return true
+            if let freq = resultFrequencies[key] {
+                if freq >= 5 {
+                    delegate?.showAlert(for: "jamb")
+                    return true
+                } else if freq == 4 {
+                    delegate?.showAlert(for: "poker")
+                    return true
+                }
             }
+            
         }
         return false
     }
